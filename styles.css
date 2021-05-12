@@ -1,0 +1,367 @@
+/* General Stylings */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+/* Typographie */
+
+h1 {
+
+    text-align: center;
+    margin: 3% auto 2%;
+}
+
+h2 {
+
+    text-align: center;
+    margin: 3% auto 2%;
+}
+
+h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 3% auto 2%;
+}
+
+h4{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 3% auto 2%;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+/* Columns */
+.col-flex {
+    display: flex;
+}
+
+
+
+
+/* Blocks */
+
+#content-teaser,
+#enum,
+#content {
+    margin-top: 6%;
+    scroll-margin-top: 140px;
+}
+
+/*
+Header Section
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+
+/* Logo */
+header .logo-wrapper {
+    position: relative;
+    background-color: #fff;
+    height: 100px;
+    width: 90px;
+    top: 10px;
+    left: 10%;
+    text-align: center;
+    z-index: 2;
+}
+
+header .logo-wrapper {
+    text-decoration: none;
+}
+
+header .logo-wrapper img {
+    height: 93%;
+    width: 95%;
+    object-fit: contain;
+}
+
+header .logo-wrapper .logo-text {
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 30px;
+    left: 102%;
+    width: 220px;
+    color: #000;
+}
+
+/* Navigation */
+header .main-nav-wrapper {
+    background-color: #359901;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header .main-nav-wrapper #main-nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .main-nav-wrapper #main-nav .nav-list {
+    text-align: center;
+}
+
+header .main-nav-wrapper #main-nav .nav-list .nav-item {
+    display: inline-block;
+}
+
+header .main-nav-wrapper #main-nav .nav-list .nav-item:after {
+    content: "|";
+    color: #fff;
+    padding: 0 10px;
+}
+
+header .main-nav-wrapper #main-nav .nav-list .nav-item:last-child:after {
+    content: "";
+}
+
+header .main-nav-wrapper #main-nav .nav-list .nav-item a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header .main-nav-wrapper #main-nav .nav-list .nav-item a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+Main Section
+*/
+
+main {
+    padding-top: 120px;
+}
+
+
+/* Slider */
+#slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 72vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+#slider ul li .slider-content {
+    position: absolute;
+    width: 40vw;
+    height: 180px;
+    right: 10%;
+    top: 25%;
+    background-color: rgba(255, 255, 255, .9)
+}
+
+#slider ul li .slider-content.left {
+    right: auto;
+    left: 10%;
+}
+
+#slider ul li .slider-content .slider-heading-wrapper {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+#slider ul li .slider-content h4 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    color: #359901;
+}
+
+#slider ul li .slider-content h2 {
+    margin-top: 7px;
+    font-size: 4.2rem;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #fff;
+    color: #359901;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: .8;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+/* Main-Content */
+#main-content {
+    width: 65%;
+    margin: auto;
+}
+
+h1.content-header {
+
+    margin-top: 3%;
+    text-align: center;
+}
+
+.content-teaser-block {
+    margin-top: 3%;
+    text-align: center;
+}
+
+/* Enum-Block */
+.enum-block{
+    margin-top: 3%;
+}
+
+.enum-block .enum-wrapper ul {
+    height: 100%;
+}
+
+.enum-block .enum-wrapper ul li {
+    height: 20%;
+}
+
+.enum-block .enum-wrapper ul li:nth-child(odd) {
+
+
+}
+
+.enum-block .enum-wrapper ul li:nth-child(even) {
+
+
+}
+
+.enum-block .enum-wrapper ul li div{
+    padding: 5px 10px;
+    line-height: inherit;
+}
+
+.enum-block .enum-wrapper ul li div h4{
+    text-align: left;
+    padding-left: 25px;
+}
+
+
+
+
+
+/* Content-Block */
+.content-block{
+    margin-top: 3%;
+}
+
+
+
+/*
+Footer Section
+ */
+
+footer{
+    background-color: #359901;
+    color: #fff;
+    height: 50px;
+    margin-top: 5%;
+}
+
+footer .copyright {
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* back-to-top */
+
+
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    border: 3px solid #fff;
+    outline: none;
+    background-color: #359901;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+
+#backToTop img{
+    height: 27px;
+    width: 30px;
+}

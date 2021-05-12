@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Wifi Berufswelten</title>
+    <meta name="description" content="Hier könnte nach Lust und Laune eine Beschreibung der Webseite eingefügt werden">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/browser-reset/browser-reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+
+    <div class="logo-wrapper">
+        <a href="index.html">
+            <img class="logo-img" src="assets/page-logo.png" alt="Logo der Wifi Steiermark">
+            <span class="logo-text">
+                WIFI STEIERMARK
+            </span>
+        </a>
+    </div>
+    <div class="main-nav-wrapper">
+        <nav id="main-nav" >
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#content-teaser">Content-Teaser</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#enum">Enum Block</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#content">Content</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main>
+    <div id="slider">
+        <a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>
+        <ul>
+            <li class="slider-item" style="background-image: url('assets/slider-1.jpg')">
+                <div class="slider-content left">
+                    <div class="slider-heading-wrapper">
+                        <h4 class="slider-subheading">LoremIpsum</h4>
+                        <h2 class="slider-heading">Lorem Ipsum Titel</h2>
+                    </div>
+                </div>
+            </li>
+            <li class="slider-item" style="background-image: url('assets/slider-2.jpg')">
+                <div class="slider-content">
+                    <div class="slider-heading-wrapper">
+                        <h4 class="slider-subheading">LoremIpsum</h4>
+                        <h2 class="slider-heading">Lorem Ipsum Titel</h2>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div id="main-content">
+        <h1 id="content-teaser" class="content-header">Berufswelten Static Landingpage</h1>
+        <section>
+            <div class="content-teaser-block">
+
+            </div>
+        </section>
+        <h2 id="enum">Enum-Block</h2>
+        <section class="enum-block col-flex">
+            <div class="enum-wrapper col-2">
+
+            </div>
+            <div class="enum-img-wrapper col-2">
+
+
+            </div>
+        </section>
+
+        <h2 id="content">Content-Block</h2>
+
+        <section class="content-block col-flex">
+            <div class="content-wrapper">
+
+            </div>
+        </section>
+
+
+    </div>
+</main>
+
+<button id="backToTop" onclick="topFunction()">
+    <img src="assets/icons/angle-up.svg" alt="Angle Up Icon"/>
+</button>
+<footer>
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <p class="copyright">Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script>
+        Wifi Steiermark | All Rights Reserved
+    </p>
+
+
+</footer>
+</body>
+
+</html>
